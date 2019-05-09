@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    window.onload = function (ev) {
+        //找标签  触发了什么事件    实现什么功能
+        $(".dels").click(function () {
+            if(!confirm("是否确认删除？")){
+                return false
+            }
+        })
+        $("#select").change(function () {
+            //让form发个请求
+            $("#form").submit()
+        })
+    }
+</script>
